@@ -295,8 +295,10 @@ exports.init = function (sequelize: Sequelize, optionsArg: array): Model {
 
 			if (instance.context && (instance.context.delta && instance.context.delta.length > 0 || destroyOperation)) {
 				let Revision = sequelize.model(options.revisionModel);
+				let RevisionChange;
+
 				if (options.enableRevisionChangeModel) {
-					let RevisionChange = sequelize.model(options.revisionChangeModel);
+					RevisionChange = sequelize.model(options.revisionChangeModel);
 				}
 				let delta = instance.context.delta;
 
