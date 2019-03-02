@@ -1,4 +1,4 @@
-import SequelizeTrails from '../lib/index';
+import SequelizeTrails from '../src/index';
 
 // const Sequelize = require('sequelize');
 // const sequelize = new Sequelize('database_test', 'root', null, {dialect: 'sqlite', storage: 'test.db'});

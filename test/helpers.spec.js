@@ -1,4 +1,4 @@
-import helpers from '../lib/helpers';
+import helpers from '../src/helpers';
 
 describe('calcDelta', () => {
 	it('returns a difference in email addresses', () => {
